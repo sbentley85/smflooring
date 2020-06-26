@@ -10,91 +10,118 @@
         <link rel='stylesheet' href='./assets/all.css'/>
         <link rel='icon' href='./favicon.ico' />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
-        <div class='wrapper'>
-            <header>
-                <div class='logo'><span id="logo"><img src='images/logo.jpg' alt='logo' /></span></div>
-            </header>
-        
-        <div class='main'>
-            <div class='info'>
-                <h1>Specialist in LVT, Wood, Laminate, Vinyl, Lino, Rubber and Carpet tiles</h1>
-                <h2>Location: Herts and surrounding area</h2>
-                <h2>Tel: 07789 926 891</h2>
-            </div>
-            <div class='tiles'>
-                
-                <div class="image">
-                    <a href="./images/pic02.jpg">
-                        <img class='pic' src="images/pic02.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./images/pic03.jpg">
-                        <img class='pic' src="images/pic03.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./images/pic04.jpg">
-                        <img class='pic' src="images/pic04.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./images/pic05.jpg">
-                        <img class='pic' src="images/pic05.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./images/pic06.jpg">
-                        <img class='pic' src="images/pic06.jpg" alt="" />
-                    </a>
-                </div>
+        <div class='container-fluid'>
+            
+            <div class="row fixed-top">
+                <div class='col mx-auto text-center header'><img id="logo" src='images/logo.jpg' alt='logo' /></span></div>
             </div>
 
-        </div>    
+            <div class="row info">
+                <div class="col mx-auto text-center">
+                    <h1>Specialist in LVT, Wood, Laminate, Vinyl, Lino, Rubber and Carpet tiles</h1>
+                    <h2>Location: Herts and surrounding area</h2>
+                    <h2>Tel: 07789 926 891</h2>
+                </div>
+            
+            </div>
 
-        <footer>
-            <div class='contact'>
-                <div class='quote-form'>
-                    <form method="post" action="#">
-                        <div class="fields">
-                            <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                            </div>
-                            <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" />
-                            </div>
-                            <i id='close' class="fas fa-times"></i>
-                            <div class="field">
-                                <textarea name="message" id="message" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                            </div>
+            
+            <div class="row">
+                <div class="mx-auto col-10"  id="carousel">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/pic03.jpg">
                         </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="primary" /></li>
-                        </ul>
-                    </form>
-                </div>
-                <div class='quote-button'>
-                    <h2 id='request-quote'>Request Quote</h2>
+                    </div>
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/pic04.jpg">
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/pic02.jpg">
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/pic05.jpg">
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/pic06.jpg">
+                        </div>
+                    </div>
                 </div>
                 
-                <div class='icons'>
-                    <a href='https://www.instagram.com/s.m_flooring/'><i class="fab fa-3x fa-instagram"></i></a>
-                    <a href='mailto:sonny@smflooring.com'><i class="far fa-3x fa-envelope"></i></a>
-                    <a href='tel:07789926891'><i class="fas fa-3x fa-mobile-alt"></i></a>
-                </div>
-                </div>
-            </div>                        
-									
-									
-									
-								
-        </footer>
+            </div>
+            
+            
 
+                
+            <div class="row">
+                <footer>
+                    <div class='contact'>
+                        <div class='quote-form'>
+                            <form method="post" action="#">
+                                <div class="fields row">
+                                    <div class="field half col xs-6">
+                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                    </div>
+                                    <div class="field half col xs-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                    </div>
+                                    <i id='close' class="fas fa-times"></i>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="field col xs-12">
+                                        <textarea name="message" id="message" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Send" class="primary" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class='quote-button'>
+                            <h2 id='request-quote'>Request Quote</h2>
+                        </div>
+                        
+                        <div class='icons'>
+                            <a href='https://www.instagram.com/s.m_flooring/'><i class="fab fa-3x fa-instagram"></i></a>
+                            <a href='mailto:sonny@smflooring.com'><i class="far fa-3x fa-envelope"></i></a>
+                            <a href='tel:07789926891'><i class="fas fa-3x fa-mobile-alt"></i></a>
+                        </div>
+                        </div>
+                    </div>                        
+                                            
+                                            
+                                            
+                                        
+                </footer>
+            </div>
 
         </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+		<script type="text/javascript" src="slick/slick.min.js"></script>		
         <script src='./main.js'></script>
     </body>
 
