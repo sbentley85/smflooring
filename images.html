@@ -21,7 +21,7 @@
         <div class='container-fluid'>
             
             <div class="row fixed-top">
-                <div class='col mx-auto text-center header'><img id="logo" src='images/logo.jpg' alt='logo' /></span></div>
+                <div class='col mx-auto text-center header'><a href="/"><img id="logo" src='images/logo.jpg' alt='logo' /></a></span></div>
             </div>
 
             
@@ -102,26 +102,33 @@
                     <div class='contact'>
                         <div class='quote-form'>
                             <form method="post" action="#">
-                                <div class="fields row">
-                                    <div class="field half col xs-6">
-                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                <div class="container">
+                                    <div class="fields row">
+                                        <div class="field col">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div class="field col">
+                                            <input type="tel" name="tel" id="tel" placeholder="Tel" />
+                                        </div>
+                                        <i id='close' class="fas fa-times"></i>
+                                        
                                     </div>
-                                    <div class="field half col xs-6">
-                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                    <div class="row">
+                                        <div class="field col">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
                                     </div>
-                                    <i id='close' class="fas fa-times"></i>
-                                    
-                                </div>
-                                <div class="row">
-                                    <div class="field col xs-12">
-                                        <textarea name="message" id="message" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                                    <div class="row">
+                                        <div class="field col">
+                                            <textarea name="message" id="message" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <ul class="actions">
-                                            <li><input type="submit" value="Send" class="primary" /></li>
-                                        </ul>
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Send" class="primary" /></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
